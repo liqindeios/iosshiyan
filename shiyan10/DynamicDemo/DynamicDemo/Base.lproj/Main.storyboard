@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Ap-MZ0">
+                                <rect key="frame" x="17.5" y="625" width="340" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeX-ht-M89">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qg-8o-5fU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-m4-INx">
+                                        <rect key="frame" x="57" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="up"/>
+                                        <connections>
+                                            <action selector="up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iER-LT-9Dc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVs-RQ-SgS">
+                                        <rect key="frame" x="114" y="0.0" width="38" height="30"/>
+                                        <state key="normal" title="down"/>
+                                        <connections>
+                                            <action selector="down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itJ-JH-WSM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf0-ih-EJW">
+                                        <rect key="frame" x="179" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="left"/>
+                                        <connections>
+                                            <action selector="left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHM-PO-knm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y58-RH-DYa">
+                                        <rect key="frame" x="236" y="0.0" width="32" height="30"/>
+                                        <state key="normal" title="right"/>
+                                        <connections>
+                                            <action selector="right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuZ-cu-Yxi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTK-up-sUw">
+                                        <rect key="frame" x="295" y="0.0" width="45" height="30"/>
+                                        <state key="normal" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4b-Oo-orh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6s4-Bh-qtI">
+                                <rect key="frame" x="16" y="20" width="343" height="597"/>
+                                <color key="backgroundColor" red="0.96154767274856567" green="0.9945029616355896" blue="0.0028838696889579296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6s4-Bh-qtI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="M3c-St-u4N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xuX-Ap-MZ0" secondAttribute="bottom" constant="12" id="VWo-Yp-RvT"/>
+                            <constraint firstItem="6s4-Bh-qtI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VqX-vg-weq"/>
+                            <constraint firstItem="xuX-Ap-MZ0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hXO-J2-lMl"/>
+                            <constraint firstItem="6s4-Bh-qtI" firstAttribute="centerX" secondItem="xuX-Ap-MZ0" secondAttribute="centerX" id="k0C-T2-6Od"/>
+                            <constraint firstItem="xuX-Ap-MZ0" firstAttribute="top" secondItem="6s4-Bh-qtI" secondAttribute="bottom" constant="8" symbolic="YES" id="vg8-DP-Nkg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="6s4-Bh-qtI" id="Y94-L1-JIv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="-10.344827586206897"/>
+        </scene>
+    </scenes>
+</document>
